@@ -3,8 +3,8 @@ import { View, Swiper, SwiperItem, Image, ScrollView } from '@tarojs/components'
 import { AtRate } from 'taro-ui';
 import NavBar from '../../components/navbar/navbar';
 
-let key = 'KC5BZ-FFO34-72WUZ-XMABB-AFL6J-TOFXG'; //使用在腾讯位置服务申请的key
-let referer = 'wetour-小程序端'; //调用插件的app的名称
+let key = '4W2BZ-BWM6G-X6DQA-QTOAL-7YK5T-S4BGA'; //使用在腾讯位置服务申请的key
+let referer = 'iTrip-小程序端'; //调用插件的app的名称
 
 import './detail.scss';
 

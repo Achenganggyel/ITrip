@@ -10,9 +10,6 @@ import './app.scss'
 // }
 
 class App extends Component {
-
-  
-
   /**
    * 指定config的类型声明为: Taro.Config
    *
@@ -29,7 +26,7 @@ class App extends Component {
       'pages/arrange/arrange',
       'pages/arrange/arrange-detail/arrange-detail',
       'pages/comment/comment',
-      'pages/markup-list/markup-list',
+      'pages/markup-list/markup-list'
     ],
     window: {
       backgroundTextStyle: 'dark',
@@ -38,7 +35,7 @@ class App extends Component {
     },
     plugins: {
       routePlan: {
-        version: "1.0.5",
+        version: "1.0.19",
         provider: "wx50b5593e81dd937a"
       }
     },

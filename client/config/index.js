@@ -1,5 +1,5 @@
 const config = {
-  projectName: 'wetour',
+  projectName: 'iTrip',
   date: '2019-10-27',
   designWidth: 750,
   deviceRatio: {

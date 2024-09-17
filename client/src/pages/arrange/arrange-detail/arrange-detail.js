@@ -3,12 +3,9 @@ import { View, Map} from '@tarojs/components'
 import { set as setGlobalData, get as getGlobalData } from '../../../global_data';
 import NavBar from '../../../components/navbar/navbar'
 
-
-
 import './arrange-detail.scss'
 
 export default class Index extends Component {
-
   /**
    * 指定config的类型声明为: Taro.Config
    *
@@ -17,7 +14,7 @@ export default class Index extends Component {
    * 提示和声明 navigationBarTextStyle: 'black' | 'white' 类型冲突, 需要显示声明类型
    */
   config: Config = {
-    navigationBarTitleText: 'WeTour'
+    navigationBarTitleText: 'iTrip'
   }
 
   state = {
@@ -25,7 +22,6 @@ export default class Index extends Component {
     longitude: 0,
     markers: [],
     polygon: []
-    
   }
   onCalloutTap(e) {
     console.log(e);
@@ -33,10 +29,9 @@ export default class Index extends Component {
     Taro.navigateTo({url: `/pages/detail/detail?id=${id}`})
   }
 
-
   componentWillMount () { 
     Taro.getLocation({
-      
+            
     }).then(res => {
       console.log(res);
       let {latitude, longitude}  = res;

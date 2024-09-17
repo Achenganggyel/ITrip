@@ -12,7 +12,6 @@ import './index.scss'
 
 
 export default class Index extends Component {
-
   /**
    * 指定config的类型声明为: Taro.Config
    *
@@ -21,7 +20,8 @@ export default class Index extends Component {
    * 提示和声明 navigationBarTextStyle: 'black' | 'white' 类型冲突, 需要显示声明类型
    */
   config: Config = {
-    navigationBarTitleText: 'WeTour'
+    navigationBarTitleText: 'iTrip',
+        
   }
 
   state = {
@@ -177,8 +177,8 @@ export default class Index extends Component {
         <Image className="thumbnail-img" src={thumbnail} mode="aspectFill"></Image>
         <View className="thumbnail-mask"></View>
         <View className="desc">
-          <View className="city-ch">张家口</View>
-          <View className="city-en">Zhangjiakou</View>
+          <View className="city-ch">深圳</View>
+          <View className="city-en">ShenZhen</View>
         </View>
         <View className="weather">
           <Text>{temperature}°C {condTxt}</Text>
